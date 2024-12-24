@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% block title %} New Zero-day Exploit Discovered in Popular CMS - Astrum IT Academy H4ck3rs {% endblock %}
+{% block content %}
+
+<main>
+    <article class="post-content">
+        <div class="post-meta">
+            <span>Author: {{ article.author }}</span>
+            <span>Date: {{ article.created_date | date:"Y-m-d" }}</span>
+        </div>
+            <h1>{{ article.title }}</h1>
+            <p>{{ article.short_content }}</p>
+            <p>{{ article.long_content }}</p>
+    </article>
+</main>
+{% endblock %}
